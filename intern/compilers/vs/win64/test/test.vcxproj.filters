@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\tests\test_main.cpp" />
+    <ClCompile Include="..\..\..\..\tests\test_example.cpp">
+      <Filter>example</Filter>
+    </ClCompile>
+    <ClCompile Include="overwrite.cpp" />
+    <ClCompile Include="asserttest.cpp" />
+    <ClCompile Include="byvalue_byreference.cpp" />
+    <ClCompile Include="test_list.cpp">
+      <Filter>example</Filter>
+    </ClCompile>
+    <ClCompile Include="person.cpp" />
+    <ClCompile Include="aufgabe2.cpp">
+      <Filter>pk1</Filter>
+    </ClCompile>
+    <ClCompile Include="aufgabe3.cpp">
+      <Filter>pk1</Filter>
+    </ClCompile>
+    <ClCompile Include="aufgabe4.cpp">
+      <Filter>pk1</Filter>
+    </ClCompile>
+    <ClCompile Include="aufgabe5.cpp">
+      <Filter>pk1</Filter>
+    </ClCompile>
+    <ClCompile Include="aufgabe5_test.cpp">
+      <Filter>pk1</Filter>
+    </ClCompile>
+    <ClCompile Include="pk2aufgabe4.cpp">
+      <Filter>pk2</Filter>
+    </ClCompile>
+    <ClCompile Include="pk2aufgabe5.cpp">
+      <Filter>pk2</Filter>
+    </ClCompile>
+    <ClCompile Include="pk2aufgabe5test.cpp">
+      <Filter>pk2</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="example">
+      <UniqueIdentifier>{76618d2e-7f5a-4bd5-bb56-9601e4e65100}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pk1">
+      <UniqueIdentifier>{9530ba75-a7eb-4b54-8eb9-ed4cd530d5e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pk2">
+      <UniqueIdentifier>{791c83da-747e-4cbb-ae64-a9b96cf6928f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="overwrite.h" />
+    <ClInclude Include="asserttest.h" />
+    <ClInclude Include="person.h" />
+    <ClInclude Include="aufgabe2.h">
+      <Filter>pk1</Filter>
+    </ClInclude>
+    <ClInclude Include="aufgabe3.h">
+      <Filter>pk1</Filter>
+    </ClInclude>
+    <ClInclude Include="aufgabe4.h">
+      <Filter>pk1</Filter>
+    </ClInclude>
+    <ClInclude Include="aufgabe5.h">
+      <Filter>pk1</Filter>
+    </ClInclude>
+    <ClInclude Include="pk2aufgabe2.h">
+      <Filter>pk2</Filter>
+    </ClInclude>
+    <ClInclude Include="pk2aufgabe4.h">
+      <Filter>pk2</Filter>
+    </ClInclude>
+    <ClInclude Include="pk2aufgabe5.h">
+      <Filter>pk2</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

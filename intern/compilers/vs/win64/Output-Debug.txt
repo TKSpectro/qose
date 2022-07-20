@@ -1,0 +1,43 @@
+﻿'test_debug.exe' (Win32): Loaded 'C:\Users\tomka\Documents\GitHub\qose\intern\build\win64\test\Debug\test_debug.exe'. Symbols loaded.
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\ntdll.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\kernel32.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\KernelBase.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\msvcp140d.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\vcruntime140_1d.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\vcruntime140d.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\ucrtbased.dll'. 
+The thread 0x6274 has exited with code 0 (0x0).
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\kernel.appcore.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\msvcrt.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\rpcrt4.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\user32.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\win32u.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\gdi32.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\gdi32full.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\msvcp_win.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\ucrtbase.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\imm32.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\TextShaping.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\uxtheme.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\combase.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\msctf.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\oleaut32.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\sechost.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\bcryptprimitives.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\TextInputFramework.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\CoreUIComponents.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\CoreMessaging.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\SHCore.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\ws2_32.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\ntmarta.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\advapi32.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\WinTypes.dll'. 
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\WinTypes.dll'. 
+'test_debug.exe' (Win32): Unloaded 'C:\Windows\System32\WinTypes.dll'
+'test_debug.exe' (Win32): Loaded 'C:\Windows\System32\ole32.dll'. 
+The thread 0x3d78 has exited with code 3 (0x3).
+The thread 0x100c has exited with code 3 (0x3).
+The thread 0x3c4c has exited with code 3 (0x3).
+The thread 0x3604 has exited with code 3 (0x3).
+The thread 0x6b84 has exited with code 3 (0x3).
+The program '[14108] test_debug.exe' has exited with code 3 (0x3).

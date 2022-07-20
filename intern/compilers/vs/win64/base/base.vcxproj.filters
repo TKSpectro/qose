@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{1456cd0f-4936-4e24-8a89-a308977ea961}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unittest">
+      <UniqueIdentifier>{5231aa69-64ea-42f1-a614-ea06b077b7c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\native">
+      <UniqueIdentifier>{aae10554-aeaf-4078-9a32-865e52ad44f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\system">
+      <UniqueIdentifier>{78667045-a003-4804-b25a-1690cee6ac7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\assert">
+      <UniqueIdentifier>{ee9d0905-2182-449e-954f-6b519de3c1d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\native\win32">
+      <UniqueIdentifier>{06557902-7a6c-4744-b5ca-338766950c17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\type">
+      <UniqueIdentifier>{a39fc9a8-e24d-4f50-b8c8-88c08df91550}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pattern">
+      <UniqueIdentifier>{aedc5d57-db4f-4f79-820c-dcc2fa2301c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io">
+      <UniqueIdentifier>{83640880-a149-4968-a08a-857ab5731d1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io\native">
+      <UniqueIdentifier>{ea91f0ac-9d19-4d75-b2fb-9321250425e6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\inc\base\core\core_assert.h">
+      <Filter>core\assert</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\base\core\core_asserthandler.h">
+      <Filter>core\assert</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\base\core\core_assertmanager.h">
+      <Filter>core\assert</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\base\core\core_system.h">
+      <Filter>core\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\base\core\win32\core_nativeasserthandler.h">
+      <Filter>core\native\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\base\core\win32\core_nativesystem.h">
+      <Filter>core\native\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\base\base_config.h" />
+    <ClInclude Include="..\..\..\..\..\inc\base\base_defines.h" />
+    <ClInclude Include="..\..\..\..\..\inc\base\core\core_defines.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\base\core\core_types.h">
+      <Filter>core\type</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\base\unittest\ut_defines.h">
+      <Filter>unittest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\base\unittest\ut_stringify.h">
+      <Filter>unittest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\base\unittest\ut_suite.h">
+      <Filter>unittest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\base\unittest\ut_test.h">
+      <Filter>unittest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\base\unittest\ut_tools.h">
+      <Filter>unittest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\base\pattern\pat_defines.h">
+      <Filter>pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\base\pattern\pat_uncopyable.h">
+      <Filter>pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\base\io\win32\io_nativedebug.h">
+      <Filter>io\native</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\base\io\io_debug.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\base\io\io_defines.h">
+      <Filter>io</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\base\core\core_asserthandler.cpp">
+      <Filter>core\assert</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\core\core_assertmanager.cpp">
+      <Filter>core\assert</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\core\win32\core_nativeasserthandler.cpp">
+      <Filter>core\native\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\unittest\ut_stringify.cpp">
+      <Filter>unittest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\io\win32\io_nativedebug.cpp">
+      <Filter>io\native</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\base\unittest\ut_suite.cpp">
+      <Filter>unittest</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

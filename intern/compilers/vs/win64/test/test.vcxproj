@@ -183,9 +183,12 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\..\tests\test_example.cpp" />
     <ClCompile Include="..\..\..\..\tests\test_main.cpp" />
+    <ClCompile Include="array.cpp" />
+    <ClCompile Include="array_test.cpp" />
     <ClCompile Include="asserttest.cpp" />
     <ClCompile Include="aufgabe2.cpp" />
     <ClCompile Include="aufgabe3.cpp" />
+    <ClCompile Include="aufgabe3_sahm.cpp" />
     <ClCompile Include="aufgabe4.cpp" />
     <ClCompile Include="aufgabe5.cpp" />
     <ClCompile Include="aufgabe5_test.cpp" />
@@ -198,8 +201,10 @@
     <ClCompile Include="test_list.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="array.h" />
     <ClInclude Include="asserttest.h" />
     <ClInclude Include="aufgabe3.h" />
+    <ClInclude Include="aufgabe3_sahm.h" />
     <ClInclude Include="aufgabe4.h" />
     <ClInclude Include="aufgabe5.h" />
     <ClInclude Include="aufgabe2.h" />

@@ -39,7 +39,7 @@ UT_TEST(PushBack)
 		// Could write GetElemntCount into a tmp variable for saving some calls to GetElementCount
 		UT_CHECK(List.GetElementCount() == Index + 1);
 
-		std::cout << Index << std::endl;;
+		//std::cout << Index << std::endl;;
 		
 		CDoubleLinkedList::SNode* TmpNode = List.GetFront();
 		for(int ListIndex = 0; ListIndex < List.GetElementCount(); ++ ListIndex)
@@ -50,7 +50,7 @@ UT_TEST(PushBack)
 			// For checking previous and next we need to differentiate first, last and inbetween nodes
 			if(ListIndex == 0)
 			{
-				std::cout << "first elm" << std::endl;
+				//std::cout << "first elm" << std::endl;
 
 				// The previous of the first should be the last element
 				UT_CHECK(TmpNode->m_pPrevious->m_Value == g_Values[List.GetElementCount() - 1]);
@@ -68,7 +68,7 @@ UT_TEST(PushBack)
 			}
 			else if(ListIndex == List.GetElementCount() - 1)
 			{
-				std::cout << "last elm" << std::endl;
+				//std::cout << "last elm" << std::endl;
 
 				UT_CHECK(TmpNode->m_pPrevious->m_Value == g_Values[ListIndex - 1]);
 				// The next of the last should be the first element
@@ -76,7 +76,7 @@ UT_TEST(PushBack)
 			}
 			else
 			{
-				std::cout << "elm" << std::endl;
+				//std::cout << "elm" << std::endl;
 
 				UT_CHECK(TmpNode->m_pPrevious->m_Value == g_Values[ListIndex - 1]);
 				UT_CHECK(TmpNode->m_pNext->m_Value == g_Values[ListIndex + 1]);
@@ -85,7 +85,7 @@ UT_TEST(PushBack)
 			// Increase the "iterator"
 			TmpNode = TmpNode->m_pNext;
 		}
-		std::cout << std::endl;
+		//std::cout << std::endl;
 	}
 
 	UT_CHECK(List.IsEmpty() == false);

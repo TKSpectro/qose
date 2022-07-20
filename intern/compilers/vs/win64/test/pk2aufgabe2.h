@@ -14,6 +14,8 @@ void Swap(int* _pA, int* _pB)
 
 	* _pB = Tmp;
 
+
+	// Can use 10 directly for size
 	int SizeOfArray = sizeof(g_Buffer) / sizeof(g_Buffer[0]);
 	assert(Tmp > 0 && Tmp < SizeOfArray);
 	g_Buffer[Tmp] = true;

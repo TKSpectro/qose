@@ -16,6 +16,6 @@ float CRectangle::GetArea() const
 	float Dx2 = m_PointB.s_X - m_PointA.s_X;
 	float Dy2 = m_PointB.s_Y - m_PointA.s_Y;
 
-	float Area = fabs(Dx1 * Dy2 - Dy2 * Dx2);
+	float Area = fabs(Dx1 * Dy2 - Dy1 * Dx2);
 	return Area	;
 }

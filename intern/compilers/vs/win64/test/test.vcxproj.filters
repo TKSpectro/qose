@@ -36,6 +36,11 @@
     <ClCompile Include="pk2aufgabe5test.cpp">
       <Filter>pk2</Filter>
     </ClCompile>
+    <ClCompile Include="aufgabe3_sahm.cpp">
+      <Filter>pk1</Filter>
+    </ClCompile>
+    <ClCompile Include="array.cpp" />
+    <ClCompile Include="array_test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="example">
@@ -73,5 +78,9 @@
     <ClInclude Include="pk2aufgabe5.h">
       <Filter>pk2</Filter>
     </ClInclude>
+    <ClInclude Include="aufgabe3_sahm.h">
+      <Filter>pk1</Filter>
+    </ClInclude>
+    <ClInclude Include="array.h" />
   </ItemGroup>
 </Project>

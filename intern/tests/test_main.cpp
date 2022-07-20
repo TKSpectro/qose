@@ -13,7 +13,9 @@
 #include "../compilers/vs/win64/test/pk2aufgabe2.h"
 #include "../compilers/vs/win64/test/pk2aufgabe4.h"
 #include "../compilers/vs/win64/test/pk2aufgabe5.h"
+#include "../compilers/vs/win64/test/aufgabe3_sahm.h"
 
+void array_test();
 void overwrite();
 void assertTest();
 void person();
@@ -27,17 +29,25 @@ void main()
 	UT::Suite::RunTests();
 	std::cout << "---- TESTS ----" << std::endl;
 
+	std::cout << "array" << std::endl;
+	//array_test();
 	std::cout << "overwrite" << std::endl;
-	overwrite();
+	//overwrite();
 	std::cout << "assertTest" << std::endl;
-	assertTest();
+	//assertTest();
 	//std::cout << "person" << std::endl;
 	//person();
 
 	std::cout << "probeklausur 1" << std::endl;
-	pk1();
+	//pk1();
 	std::cout << "probeklausur 2" << std::endl;
-	pk2();
+	//pk2();
+}
+
+void array_test()
+{
+	//UT::Suite::Reset(&std::cout);
+	//UT::Suite::RunTests();
 }
 
 void overwrite()
@@ -103,16 +113,20 @@ void pk1()
 	CCard Card2 = Card;
 	Card2.m_CardColor;
 
+	// New Card implementation
+	CCard2 Card3 = CCard2(CCardColor2::GetCross(), CCardType2::GetSeven());
 
-	CRectangle rect;
+	CRectangle* pRect = new CRectangle();
 
-	rect.m_PointA = Point2D(0, 0);
-	rect.m_PointB = Point2D(4, 0);
-	rect.m_PointC = Point2D(4, 4);
-	rect.m_PointD = Point2D(0, 4);
+	pRect->m_PointA = Point2D(0, 0);
+	pRect->m_PointB = Point2D(4, 0);
+	pRect->m_PointC = Point2D(4, 4);
+	pRect->m_PointD = Point2D(0, 4);
 
-	float area = rect.GetArea();
+	float area = pRect->GetArea();
 	area;
+
+	delete pRect;
 
 	// Run tests for task 5
 	//UT::Suite::Reset(&std::cout);

@@ -1,5 +1,6 @@
 #include "unittest/ut_test.h"
 #include <list>
+#include <array>
 
 using CIntList = std::list<int>;
 
@@ -64,3 +65,19 @@ UT_TEST(LongStdListPushBack)
 // ------------------------------------
 // Current video 2022-06-17
 // ------------------------------------
+
+
+
+using CArray = std::array<int, 4>;
+
+
+UT_TEST(Test1)
+{
+    //std::array<int, 3> Test =  {1,2,3}
+    CArray Array = {1,2,3,4};
+
+    Array.at(1);
+    Array[1];
+    Array.empty();
+    Array.size();
+}

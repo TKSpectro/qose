@@ -5,6 +5,7 @@
 #include "../compilers/vs/win64/test/overwrite.h"
 #include "../compilers/vs/win64/test/asserttest.h"
 //#include "../compilers/vs/win64/test/person.h"
+
 #include "../compilers/vs/win64/test/aufgabe2.h"
 #include "../compilers/vs/win64/test/aufgabe3.h"
 #include "../compilers/vs/win64/test/aufgabe4.h"
@@ -21,14 +22,21 @@ void pk2();
 
 void main()
 {
-	//UT::Suite::Reset(&std::cout);
-	//UT::Suite::RunTests();
+	std::cout << "---- TESTS ----" << std::endl;
+	UT::Suite::Reset(&std::cout);
+	UT::Suite::RunTests();
+	std::cout << "---- TESTS ----" << std::endl;
 
-	//overwrite();
-	//assertTest();
+	std::cout << "overwrite" << std::endl;
+	overwrite();
+	std::cout << "assertTest" << std::endl;
+	assertTest();
+	//std::cout << "person" << std::endl;
 	//person();
 
-	//pk1();
+	std::cout << "probeklausur 1" << std::endl;
+	pk1();
+	std::cout << "probeklausur 2" << std::endl;
 	pk2();
 }
 
@@ -107,8 +115,8 @@ void pk1()
 	area;
 
 	// Run tests for task 5
-	UT::Suite::Reset(&std::cout);
-	UT::Suite::RunTests();
+	//UT::Suite::Reset(&std::cout);
+	//UT::Suite::RunTests();
 }
 
 void pk2()
@@ -121,6 +129,6 @@ void pk2()
 	Swap(pA, pB);
 
 	// Run tests for task 5
-	UT::Suite::Reset(&std::cout);
-	UT::Suite::RunTests();
+	//UT::Suite::Reset(&std::cout);
+	//UT::Suite::RunTests();
 }

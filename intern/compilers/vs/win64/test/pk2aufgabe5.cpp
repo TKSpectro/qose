@@ -2,8 +2,8 @@
 
 CDoubleLinkedList::CDoubleLinkedList()
 	: m_ElementCount(0)
-	, m_FirstNode(nullptr)
-	, m_LastNode(nullptr)
+	, m_pFirstNode(nullptr)
+	, m_pLastNode(nullptr)
 {
 }
 
@@ -11,46 +11,46 @@ void CDoubleLinkedList::PushBack(int _Value)
 {
 	SNode* NewNode = new SNode();
 	NewNode->m_Value = _Value;
-	NewNode->m_Next = m_FirstNode;
-	NewNode->m_Previous = m_LastNode;
+	NewNode->m_pNext = m_pFirstNode;
+	NewNode->m_pPrevious = m_pLastNode;
 
-	if(m_FirstNode == nullptr)
+	if(m_pFirstNode == nullptr)
 	{
-		m_FirstNode = NewNode;
+		m_pFirstNode = NewNode;
 	}
-	if(m_LastNode == nullptr)
+	if(m_pLastNode == nullptr)
 	{
-		m_LastNode = NewNode;
+		m_pLastNode = NewNode;
 	}
 
-	m_LastNode->m_Next = NewNode;
-	m_LastNode = NewNode;
+	m_pLastNode->m_pNext = NewNode;
+	m_pLastNode = NewNode;
 
-	m_FirstNode->m_Previous = NewNode;
+	m_pFirstNode->m_pPrevious = NewNode;
 
 	++m_ElementCount;
 }
 
 void CDoubleLinkedList::PopBack()
 {
-	if(m_FirstNode == m_LastNode)
+	if(m_pFirstNode == m_pLastNode)
 	{
-		delete m_LastNode;
+		delete m_pLastNode;
 
 		m_ElementCount = 0;
-		m_FirstNode = nullptr;
-		m_LastNode = nullptr;
+		m_pFirstNode = nullptr;
+		m_pLastNode = nullptr;
 	}
 	else
 	{
-		SNode* TmpLastNode = m_LastNode;
-		// Set the last node the m_Previous of the currently last one
-		m_LastNode = m_LastNode->m_Previous;
-		// Set the m_Next of the new last to the firstNode to keep the loop running
-		m_LastNode->m_Next = m_FirstNode;
+		SNode* TmpLastNode = m_pLastNode;
+		// Set the last node the m_pPrevious of the currently last one
+		m_pLastNode = m_pLastNode->m_pPrevious;
+		// Set the m_pNext of the new last to the firstNode to keep the loop running
+		m_pLastNode->m_pNext = m_pFirstNode;
 
 		// Set the previous of the FirstNode to the new lastNode
-		m_FirstNode->m_Previous = m_LastNode;
+		m_pFirstNode->m_pPrevious = m_pLastNode;
 
 		delete TmpLastNode;
 		--m_ElementCount;
@@ -59,7 +59,7 @@ void CDoubleLinkedList::PopBack()
 
 CDoubleLinkedList::SNode* CDoubleLinkedList::GetFront()
 {
-	return m_FirstNode;
+	return m_pFirstNode;
 }
 
 bool CDoubleLinkedList::IsEmpty()

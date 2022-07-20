@@ -31,8 +31,8 @@ CPerson& CPerson::operator=(const CPerson& _rOther)
 		strcpy_s(pLastName, NumberOfCharsLast, _rOther.m_pLastName);
 
 		// Alles hat geklappt. Jetzt sind wir safe und koennen aufraeument und den Pointer setzen
-		delete m_pFirstName;
-		delete m_pLastName;
+		delete[] m_pFirstName;
+		delete[] m_pLastName;
 
 		m_pFirstName = pFirstName;
 		m_pLastName = pLastName;

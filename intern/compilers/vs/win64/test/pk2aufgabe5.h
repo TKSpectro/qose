@@ -7,8 +7,8 @@ class CDoubleLinkedList
 		struct SNode
 		{
 			int m_Value;
-			SNode* m_Previous;
-			SNode* m_Next;
+			SNode* m_pPrevious;
+			SNode* m_pNext;
 		};
 
 	public:
@@ -24,6 +24,6 @@ class CDoubleLinkedList
 	private:
 
 		int m_ElementCount;
-		SNode* m_FirstNode;
-		SNode* m_LastNode;
+		SNode* m_pFirstNode;
+		SNode* m_pLastNode;
 };

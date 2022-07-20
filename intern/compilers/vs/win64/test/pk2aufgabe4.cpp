@@ -4,8 +4,8 @@
 
 SAdress& SAdress::operator=(const SAdress& _rOther)
 {
-	assert(_rOther.mCity != nullptr);
-	assert(_rOther.mStreet != nullptr);
+	assert(_rOther.m_City != nullptr);
+	assert(_rOther.m_Street != nullptr);
 
 	char* LocalCity = nullptr;
 	char* LocalStreet = nullptr;
@@ -13,23 +13,23 @@ SAdress& SAdress::operator=(const SAdress& _rOther)
 	try
 	{
 		// Add +1 because of \0 at the end of c string
-		size_t NumberOfCharsCity = strlen(_rOther.mCity) + 1;
+		size_t NumberOfCharsCity = strlen(_rOther.m_City) + 1;
 		char* LocalCity = new char[NumberOfCharsCity];
-		strcpy_s(LocalCity, NumberOfCharsCity, _rOther.mCity);
+		strcpy_s(LocalCity, NumberOfCharsCity, _rOther.m_City);
 
 		// Add +1 because of \0 at the end of c string
-		size_t NumberOfCharsStreet = strlen(_rOther.mStreet) + 1;
+		size_t NumberOfCharsStreet = strlen(_rOther.m_Street) + 1;
 		char* LocalStreet = new char[NumberOfCharsStreet];
-		strcpy_s(LocalStreet, NumberOfCharsStreet, _rOther.mStreet);
+		strcpy_s(LocalStreet, NumberOfCharsStreet, _rOther.m_Street);
 
 		// All the pointers and values can be copied so we can proceed
 		// Cleanup old Strings
-		delete[] mCity;
-		delete[] mStreet;
+		delete[] m_City;
+		delete[] m_Street;
 
 		// Set the new pointer
-		mCity = LocalCity;
-		mStreet = LocalStreet;
+		m_City = LocalCity;
+		m_Street = LocalStreet;
 	}
 	catch(...)
 	{
